@@ -15,6 +15,13 @@
     <title>Spark Stack International</title>
   </head>
   <body>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const route = params.get('route');
+      if (route) {
+        window.history.replaceState({}, '', '/spark-stack-international' + route);
+      }
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
