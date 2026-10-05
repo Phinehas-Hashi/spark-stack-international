@@ -1,13 +1,13 @@
 {
   "name": "Spark Stack International",
   "short_name": "Spark Stack",
-  "start_url": "/",
+  "start_url": "/spark-stack-international/",
   "display": "standalone",
   "background_color": "#080A0F",
   "theme_color": "#080A0F",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/spark-stack-international/favicon.svg",
       "sizes": "96x96",
       "type": "image/svg+xml"
     }
