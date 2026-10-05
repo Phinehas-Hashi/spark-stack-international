@@ -1,4 +1,5 @@
-import{useState}from'react';import{Link,NavLink,Routes,Route}from'react-router-dom';
+import{useState}from'react';
+import{ProductRouter}from'./Product.jsx';import{Link,NavLink,Routes,Route}from'react-router-dom';
 const nav=[['About','/about'],['Ecosystem','/ecosystem'],['Technology','/technology'],['Labs','/labs'],['Careers','/careers'],['Contact','/contact']];
 const products=[['Spark Stack Academy','Education','Building'],['Spark Stack Community','Community','Planned'],['Spark Stack Careers','Careers','Planned'],['Spark Stack Freelance','Freelance','Planned'],['Ignite Pay','Payments','In development'],['Ignite Business','Business','Planned'],['Spark Stack AI','Artificial Intelligence','Research / Building'],['Spark Stack Labs','Innovation','Building']];
 function Brand(){return <Link className="brand" to="/" aria-label="Spark Stack International home"><img src={`${import.meta.env.BASE_URL}brand/spark-stack-mark.svg`} alt=""/><span><b>SPARK STACK</b><small>INTERNATIONAL</small></span></Link>}
