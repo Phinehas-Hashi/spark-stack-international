@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/spark-stack-international/" />
+    <script>
+      const base = '/spark-stack-international';
+      const path = window.location.pathname;
+      const query = window.location.search;
+      const hash = window.location.hash;
+      if (path.startsWith(base) && path !== base + '/') {
+        const route = path.slice(base.length) || '/';
+        window.location.replace(base + '/?route=' + encodeURIComponent(route) + query + hash);
+      } else {
+        window.location.replace(base + '/' + query + hash);
+      }
+    </script>
+    <title>Spark Stack International</title>
+  </head>
+  <body>Redirecting…</body>
+</html>
